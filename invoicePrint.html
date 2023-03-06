@@ -89,7 +89,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <link rel="stylesheet" href="/InvoicePrint.css">
+
 
 </head>
 
@@ -97,7 +97,7 @@
 
 
   <div>
-    <link href="./frame71.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/InvoicePrint.css">
 
     <div class="frame71-container">
       <div class="frame71-frame71">
@@ -127,7 +127,7 @@
                             <span class="Editable-Text" contenteditable>GSTIN/UIN:</span>
                           </span>
                           <span class="frame71-text008">
-                            <span class="gstinNo Editable-Text" contenteditable>-</span>
+                            <span class=" Editable-Text" contenteditable>--</span>
                           </span>
                         </div>
                         <div class="frame71-frame55">
@@ -187,17 +187,18 @@
                               (Shipped to):</span>
                           </span>
                           <span class="frame71-text028">
-                            <span class="custName custname1Editable-Text" contenteditable>Suresh
+                            <span onblur="custnamesync()" class="custname Editable-Text" contenteditable>Suresh
                               prajapati</span>
                           </span>
                           <span class="frame71-text030">
-                            <span class="custadd Editable-Text" contenteditable>Shivpur,
+                            <span onblur="custaddsync()" class="custadd Editable-Text" contenteditable>Shivpur,
                               Varanasi.</span>
                           </span>
                           <div class="frame71-frame111">
                             <div class="frame71-frame12">
                               <span class="frame71-text032">
-                                <span class="gstinNocopy Editable-Text" contenteditable>GSTIN/UIN:</span>
+                                <span  class=" Editable-Text"
+                                  contenteditable>GSTIN/UIN:</span>
                               </span>
                               <span class="frame71-text034">
                                 <span class="Editable-Text" contenteditable>(if
@@ -205,7 +206,7 @@
                               </span>
                             </div>
                             <span class="frame71-text036">
-                              <span class="gstinNo Editable-Text" contenteditable>--</span>
+                              <span onblur="gstinNosync()"class="gstinNo Editable-Text" contenteditable>--</span>
                             </span>
                           </div>
                         </div>
@@ -684,8 +685,8 @@
       </div>
     </div>
   </div>
-<script src="/custnamereplicate.js"></script>
-<script src="/titleadjustwhenprinting.js"></script>
+  <script src="/custnamereplicate.js"></script>
+  <script src="/TitleAdjustWhenPrinting.js"></script>
 </body>
 
 </html>
