@@ -88,6 +88,7 @@ button.button1:hover span {
   background: none;
 }
 
+
 button.button1:active {
   transform: scale(0.9);
 }
