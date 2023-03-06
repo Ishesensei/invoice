@@ -1,3 +1,4 @@
+/* console.log("selective print module has been executed"); */
 body > *:not(.printable) {
     display: none;
 }

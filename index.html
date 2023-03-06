@@ -97,7 +97,7 @@
 <body onbeforeprint="rmTitle()">
 
 
-  <button id="topbutton" class="button1">
+  <button onclick="printIt()" id="topbutton" class="button1">
     <span id="gobutton" class="text">Go print !</span>
   </button>
   <br>
@@ -134,7 +134,7 @@
                             <span class="Editable-Text" contenteditable>GSTIN/UIN:</span>
                           </span>
                           <span class="frame71-text008">
-                            <span class=" Editable-Text" contenteditable>--</span>
+                            <span class=" Editable-Text" contenteditable>-</span>
                           </span>
                         </div>
                         <div class="frame71-frame55">
@@ -194,7 +194,7 @@
                               (Shipped to):</span>
                           </span>
                           <span class="frame71-text028">
-                            <span onblur="custnamesync()" class="custName Editable-Text" contenteditable>Suresh
+                            <span onblur="custnamesync()" class="custName  custname Editable-Text" contenteditable>Suresh
                               prajapati</span>
                           </span>
                           <span class="frame71-text030">
@@ -225,8 +225,7 @@
                               (Billed to):</span>
                           </span>
                           <span class="frame71-text040">
-                            <span class="custnamecopy Editable-Text" contenteditable>Suresh
-                              prajapati</span>
+                            <span class="custnamecopy Editable-Text" contenteditable>---- ----</span>
                           </span>
                           <span class="frame71-text042">
                             <span class="custaddcopy Editable-Text" contenteditable>Shivpur,
@@ -692,8 +691,9 @@
       </div>
     </div>
   </div>
-  <script src="/custnamereplicate.js"></script>
-  <script src="/printmodeTitle.js"></script>
+  <script src="./custnamereplicate.js"></script>
+  <script src="./printmodeTitle.js"></script>
+  <script src="./randomjava.js"></script>
 </body>
 
 </html>
