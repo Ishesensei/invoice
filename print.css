@@ -1,0 +1,9 @@
+body > *:not(.printable) {
+    display: none;
+}
+
+//Not needed if already showing
+body > .printable {
+    display: block;
+justify-content: center;
+}
