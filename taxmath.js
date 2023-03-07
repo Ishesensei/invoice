@@ -14,75 +14,19 @@ var cgst = document.querySelector(".frame71-frame301 .Editable-Text");
 var sgst = document.querySelector(".frame71-frame311 .Editable-Text");
 
 var totalTaxableAmt =
-  Number(
-    (
-      document
-        .querySelector(".frame71-frame292 .Editable-Text")
-        .innerHTML.match(/[0-9]/g) || ""
-    )
-      .toString()
-      .replace(/[^0-9]/g, "")
-  ) +
-  Number(
-    (
-      document
-        .querySelector(".frame71-frame294 .Editable-Text")
-        .innerHTML.match(/[0-9]/g) || ""
-    )
-      .toString()
-      .replace(/[^0-9]/g, "")
-  ) +
-  Number(
-    (
-      document
-        .querySelector(".frame71-frame296 .Editable-Text")
-        .innerHTML.match(/[0-9]/g) || ""
-    )
-      .toString()
-      .replace(/[^0-9]/g, "")
-  ) +
-  Number(
-    (
-      document
-        .querySelector(".frame71-frame298 .Editable-Text")
-        .innerHTML.match(/[0-9]/g) || ""
-    )
-      .toString()
-      .replace(/[^0-9]/g, "")
-  );
+  Number((document.querySelector(".frame71-frame292 .Editable-Text").innerHTML.match(/[0-9]/g) || "" ).toString().replace(/[^0-9]/g, "")) +
+  Number((document.querySelector(".frame71-frame294 .Editable-Text").innerHTML.match(/[0-9]/g) || "" ).toString().replace(/[^0-9]/g, "")) +
+  Number((document.querySelector(".frame71-frame296 .Editable-Text").innerHTML.match(/[0-9]/g) || "" ).toString().replace(/[^0-9]/g, "")) +
+  Number((document.querySelector(".frame71-frame298 .Editable-Text").innerHTML.match(/[0-9]/g) || "" ).toString().replace(/[^0-9]/g, ""));
 
 var totalTax =
-  Number(
-    (
-      document
-        .querySelector(".frame71-frame301 .Editable-Text")
-        .innerHTML.match(/[0-9]/g) || ""
-    )
-      .toString()
-      .replace(/[^0-9]/g, "")
-  ) +
-  Number(
-    (
-      document
-        .querySelector(".frame71-frame302 .Editable-Text")
-        .innerHTML.match(/[0-9]/g) || ""
-    )
-      .toString()
-      .replace(/[^0-9]/g, "")
-  ) +
-  Number(
-    (
-      document
-        .querySelector(".frame71-frame303 .Editable-Text")
-        .innerHTML.match(/[0-9]/g) || ""
-    )
-      .toString()
-      .replace(/[^0-9]/g, "")
-  ) +
-  Number(
-    (
-      document
-        .querySelector(".frame71-frame304 .Editable-Text")
+  Number((document.querySelector(".frame71-frame301 .Editable-Text")
+        .innerHTML.match(/[0-9]/g) || "" ) .toString().replace(/[^0-9]/g, "")) +
+  Number((document.querySelector(".frame71-frame302 .Editable-Text")
+        .innerHTML.match(/[0-9]/g) || "" ) .toString().replace(/[^0-9]/g, "")) +
+  Number((document.querySelector(".frame71-frame303 .Editable-Text")
+        .innerHTML.match(/[0-9]/g) || "" ) .toString().replace(/[^0-9]/g, "")) +
+  Number((document.querySelector(".frame71-frame304 .Editable-Text")
         .innerHTML.match(/[0-9]/g) || ""
     )
       .toString()
