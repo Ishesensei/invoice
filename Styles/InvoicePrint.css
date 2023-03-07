@@ -1,10 +1,50 @@
+#topbar {
+  position: fixed;
+  top: 0;
+  margin:0;
+  display: inline-flex;
+  flex-direction: row;
+   width: 100vw;
+   z-index: 400;
+}
+
+.Editable-text:hover {
+  background-color: aquamarine;
+  box-shadow: 0 0 0 2px rgb(0, 255, 106);
+  border-radius: .2rem;
+}
+.Editable-text {
+  transition: all 200ms;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 40px;
+}
+
+/* scrollbar track */
+::-webkit-scrollbar-track {
+background: red;
+  border-radius: 10px;
+  
+}
+
+/* scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  box-shadow: inset 5px 3px 5px rgba(255, 255, 255, 0.261); 
+  border-radius: 10px;
+  height: 90vh;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
 
 
 /* changes */
 #invoice {
-  margin
   box-sizing: border-box;
-  margin: 0%;
+  margin: 70px;
   padding: 0%;
   justify-content: center;
   text-align: center;
@@ -15,6 +55,12 @@
   box-shadow: 0 0 3rem 0 #b657ff3e ;
   transition: all .3s;
 
+}
+.zoomitup {
+  transform: scale(4.7);
+}
+#invoice:active {
+  transform: scale(.99);
 }
 
 #invoice:hover{
@@ -51,6 +97,9 @@ button.button1 {
   white-space: nowrap;
   cursor: pointer;
   transition: all .3s;
+  width: 100%;
+ 
+
 }
 
 button.button1:active,
@@ -81,23 +130,8 @@ button.button1:active {
 
 
 
-iframe {}
-
-@media print {
-  html {
-    margin: 0%;
-    padding: 0%;
-  }
-}
 
 
-
-.Editable-Text:hover {
-  box-shadow: 0 0 .5rem 0 rgba(255, 10, 255, 0.421);
-  background-color: aquamarine;
-  animation-duration: 300ms;
-  display: block;
-}
 
 /* changes end */
 
@@ -146,7 +180,7 @@ iframe {}
   flex-direction: column;
 }
 
-.frame71-text {
+.frame71-textA {
   height: auto;
   font-size: 20px;
   align-self: auto;

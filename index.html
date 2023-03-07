@@ -11,12 +11,14 @@
     html {
       line-height: 1.15;
     }
+
     body {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
+
     body {
       margin: 0;
     }
@@ -80,13 +82,11 @@
 
     }
   </style>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
     data-tag="font" />
-  <link rel="stylesheet" href="./style.css" />
+
 
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -95,60 +95,64 @@
   <link rel="manifest" href="/site.webmanifest">
 
 
-  <link rel="stylesheet" href="./InvoicePrint.css">
-  <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+  <link rel="stylesheet" href="./Styles/InvoicePrint.css">
+  <link rel="stylesheet" type="text/css" media="print" href="./Styles/print.css" />
 </head>
 
 <body onbeforeprint="rmTitle()">
 
 
-  <button onclick="printIt()" id="topbutton" class="button1">
-    <span id="gobutton" class="text">Go print !</span>
+
+  <div id="topbar"> 
+    <button onclick="printIt()" id="topbutton" class="button1">
+      <span id="gobutton" class="text">Go print !</span>
+    </button>
+
+    <br>
+    <button onclick="calcTax()" id="topbutton2" class="button1">
+      <span id="gobutton" class="text">update!</span>
+  </div>
   </button>
-  <br>
 
-
-  <div id="invoice" class="printable">
-
+  <div id="invoice" class=" printable">
 
     <div class="frame71-container">
       <div class="frame71-frame71">
         <div class="frame71-frame35">
           <div class="frame71-frame474">
             <div class="frame71-frame476">
-              <span class="frame71-text"><span class="Editable-Text" contenteditable>Tax
+              <span class="frame71-text"><span class="Editable-text" contenteditable>Tax
                   Invoice</span></span>
               <div class="frame71-frame475">
                 <div class="frame71-frame34">
                   <div class="frame71-frame13">
                     <div class="frame71-frame8">
-                      <img src="public/playground_assets/frame72012-fbj-200w.png" alt="Frame72012"
-                        class="frame71-frame7" />
+                      <img src="/Images/logo.png" alt="Frame72012" class="frame71-frame7" />
                       <div class="frame71-frame6">
                         <span class="frame71-text002">
-                          <span class="Editable-Text" contenteditable>Baba Home Stay</span>
+                          <span class="Editable-text" coEditable-ntenteditable>Baba Home Stay</span>
                         </span>
                         <span class="frame71-text004">
-                          <span class="Editable-Text" contenteditable>
+                          <span class="Editable-text" contenteditable>
                             SH 8/3 A 19 RAM JANKI DHAM COLONY, SHIVPUR,
                             VARANASI.
                           </span>
                         </span>
                         <div class="frame71-frame11">
                           <span class="frame71-text006">
-                            <span class="Editable-Text" contenteditable>GSTIN/UIN:</span>
+                            <span class="Editable-text" contenteditable>GSTIN/UIN:</span>
                           </span>
                           <span class="frame71-text008">
-                            <span class=" Editable-Text" contenteditable>--</span>
+                            <span class=" Editable-text" contenteditable>--</span>
                           </span>
                         </div>
                         <div class="frame71-frame55">
                           <span class="frame71-text010">
-                            <span class="Editable-Text" contenteditable>State: Uttar
+                            <span class="Editable-text" contenteditable>State: Uttar
                               Pradesh</span>
                           </span>
                           <span class="frame71-text012">
-                            <span class="Editable-Text" contenteditable>State Code:09</span>
+                            <span class="Editable-text" contenteditable>State Code:09</span>
                           </span>
                         </div>
                       </div>
@@ -158,31 +162,31 @@
                     <div class="frame71-frame10">
                       <div class="frame71-frame5">
                         <span class="frame71-text014">
-                          <span class=" Editable-Text" contenteditable>Invoice No:</span>
+                          <span class=" Editable-text" contenteditable>Invoice No:</span>
                         </span>
                         <div class="frame71-frame59">
                           <span class="frame71-text016">
-                            <span class="invNo Editable-Text" contenteditable>BHS/23/0001</span>
+                            <span class="invNo Editable-text" contenteditable>BHS/23/0001</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame9">
                         <span class="frame71-text018">
-                          <span class=" Editable-Text" contenteditable>Invoice Date:</span>
+                          <span class=" Editable-text" contenteditable>Invoice Date:</span>
                         </span>
                         <div class="frame71-frame60">
                           <span class="frame71-text020">
-                            <span class="invDate Editable-Text" contenteditable>08/03/2023</span>
+                            <span class="invDate Editable-text" contenteditable>08/03/2023</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame101">
                         <span class="frame71-text022">
-                          <span class=" Editable-Text" contenteditable>Ref. No:</span>
+                          <span class=" Editable-text" contenteditable>Ref. No:</span>
                         </span>
                         <div>
                           <span class="frame71-text024">
-                            <span class="invRef Editable-Text" contenteditable>L12P32R01</span>
+                            <span class="invRef Editable-text" contenteditable>L12P32R01</span>
                           </span>
                         </div>
                       </div>
@@ -195,28 +199,27 @@
                       <div class="frame71-frame16">
                         <div class="frame71-frame61">
                           <span class="frame71-text026">
-                            <span class="Editable-Text" contenteditable>Consignee name
+                            <span class="Editable-text" contenteditable>Consignee name
                               (Shipped to):</span>
                           </span>
                           <span class="frame71-text028">
-                            <span onblur="custnamesync()" class="custName  custname Editable-Text"
-                              contenteditable>Name</span>
+                            <span onblur="custnamesync()" class="custName  custname Editable-text" contenteditable>Name</span>
                           </span>
                           <span class="frame71-text030">
-                            <span onblur="custaddsync()" class="custadd Editable-Text" contenteditable>Address</span>
+                            <span onblur="custaddsync()" class="custadd Editable-text" contenteditable>Address</span>
                           </span>
                           <div class="frame71-frame111">
                             <div class="frame71-frame12">
                               <span class="frame71-text032">
-                                <span class=" Editable-Text" contenteditable>GSTIN/UIN:</span>
+                                <span class=" Editable-text" contenteditable>GSTIN/UIN:</span>
                               </span>
                               <span class="frame71-text034">
-                                <span class="Editable-Text" contenteditable>(if
+                                <span class="Editable-text" contenteditable>(if
                                   registered)</span>
                               </span>
                             </div>
                             <span class="frame71-text036">
-                              <span onblur="gstinNosync()" class="gstinNo Editable-Text" contenteditable>16 Digit
+                              <span onblur="gstinNosync()" class="gstinNo Editable-text" contenteditable>16 Digit
                                 gstin</span>
                             </span>
                           </div>
@@ -225,27 +228,27 @@
                       <div class="frame71-frame15">
                         <div class="frame71-frame62">
                           <span class="frame71-text038">
-                            <span class=" Editable-Text" contenteditable>Customer name
+                            <span class=" Editable-text" contenteditable>Customer name
                               (Billed to):</span>
                           </span>
                           <span class="frame71-text040">
-                            <span class="custnamecopy Editable-Text" contenteditable>--</span>
+                            <span class="custnamecopy Editable-text" contenteditable>--</span>
                           </span>
                           <span class="frame71-text042">
-                            <span class="custaddcopy Editable-Text" contenteditable>--</span>
+                            <span class="custaddcopy Editable-text" contenteditable>--</span>
                           </span>
                           <div class="frame71-frame112">
                             <div class="frame71-frame121">
                               <span class="frame71-text044">
-                                <span class="Editable-Text" contenteditable>GSTIN/UIN:</span>
+                                <span class="Editable-text" contenteditable>GSTIN/UIN:</span>
                               </span>
                               <span class="frame71-text046">
-                                <span class="Editable-Text" contenteditable>(if
+                                <span class="Editable-text" contenteditable>(if
                                   registered)</span>
                               </span>
                             </div>
                             <span class="frame71-text048">
-                              <span class="gstinNocopy Editable-Text" contenteditable>09AUIPS7272E1ZD</span>
+                              <span class="gstinNocopy Editable-text" contenteditable>--</span>
                             </span>
                           </div>
                         </div>
@@ -255,11 +258,11 @@
                       <div class="frame71-frame161">
                         <div class="frame71-frame63">
                           <span class="frame71-text050">
-                            <span class="Editable-Text" contenteditable>Place of
+                            <span class="Editable-text" contenteditable>Place of
                               supply:</span>
                           </span>
                           <span class="frame71-text052">
-                            <span class="Editable-Text" contenteditable>
+                            <span class="Editable-text" contenteditable>
                               SH 8/3 A 19 RAM JANKI DHAM COLONY, SHIVPUR,
                               VARANASI.
                             </span>
@@ -269,21 +272,21 @@
                       <div class="frame71-frame19">
                         <div class="frame71-frame64">
                           <span class="frame71-text054">
-                            <span class="Editable-Text" contenteditable>Remarks:</span>
+                            <span class="Editable-text" contenteditable>Remarks:</span>
                           </span>
                           <span class="frame71-text056">
-                            <span class="Editable-Text" contenteditable>Cash</span>
+                            <span class="Editable-text" contenteditable>Cash</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame201">
                         <div class="frame71-frame65">
                           <span class="frame71-text058">
-                            <span class="Editable-Text" contenteditable>Mode of
+                            <span class="Editable-text" contenteditable>Mode of
                               payment:</span>
                           </span>
                           <span class="frame71-text060">
-                            <span class="Editable-Text" contenteditable>Cash</span>
+                            <span class="Editable-text" contenteditable>Cash</span>
                           </span>
                         </div>
                       </div>
@@ -294,29 +297,29 @@
                       <div class="frame71-frame36">
                         <div class="frame71-frame24">
                           <span class="frame71-text062">
-                            <span class="Editable-Text" contenteditable>Items</span>
+                            <span class="Editable-text" contenteditable>Items</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame37">
                         <div class="frame71-frame25">
                           <span class="frame71-text064">
-                            <span class="Editable-Text" contenteditable>Style</span>
+                            <span class="Editable-text" contenteditable>Style</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame38">
                         <div class="frame71-frame26">
                           <span class="frame71-text066">
-                            <span class="Editable-Text" contenteditable>Nights</span>
+                            <span class="Editable-text" contenteditable>Nights</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame39">
                         <div class="frame71-frame27">
-                          <span class="frame71-text068"><span class="Editable-Text" contenteditable>₹/</span></span>
+                          <span class="frame71-text068"><span class="Editable-text" contenteditable>₹/</span></span>
                           <span class="frame71-text070">
-                            <span class="Editable-Text" contenteditable>night</span>
+                            <span class="Editable-text" contenteditable>night</span>
                           </span>
                         </div>
                       </div>
@@ -324,35 +327,35 @@
                         <div class="frame71-frame271">
                           <span class="frame71-text072">₹</span>
                           <span class="frame71-text073">
-                            <span class="Editable-Text" contenteditable>Taxable</span>
+                            <span class="Editable-text" contenteditable>Taxable</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame44">
                         <div class="frame71-frame2601">
                           <span class="frame71-text075">
-                            <span class="Editable-Text" contenteditable>HSN/SAC</span>
+                            <span class="Editable-text" contenteditable>HSN/SAC</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame41">
                         <div class="frame71-frame29">
                           <span class="frame71-text077">
-                            <span class="Editable-Text" contenteditable>Cgst</span>
+                            <span class="Editable-text" contenteditable>Cgst</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame42">
                         <div class="frame71-frame30">
                           <span class="frame71-text079">
-                            <span class="Editable-Text" contenteditable>Sgst</span>
+                            <span class="Editable-text" contenteditable>Sgst</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame43">
                         <div class="frame71-frame31">
                           <span class="frame71-text081">
-                            <span class="Editable-Text" contenteditable>Igst</span>
+                            <span class="Editable-text" contenteditable>Igst</span>
                           </span>
                         </div>
                       </div>
@@ -362,54 +365,53 @@
                         <div class="frame71-frame2602">
                           <div class="frame71-frame441">
                             <span class="frame71-text083">
-                              <span class="Editable-Text" contenteditable>01</span>
+                              <span class="Editable-text" contenteditable>01</span>
                             </span>
                             <span class="frame71-text085">
-                              <span class="Editable-Text" contenteditable>Room</span>
+                              <span class="Editable-text" contenteditable>Room</span>
                             </span>
                           </div>
                         </div>
                       </div>
-                      <div cclass="Editable-Text" contenteditablelass="frame71-frame371">
+                      <div cclass="Editable-text" contenteditablelass="frame71-frame371">
                         <div class="frame71-frame2603">
-                          <span class="frame71-text087"><span class="Editable-Text" contenteditable>D</span></span>
+                          <span class="frame71-text087"><span class="Editable-text" contenteditable>D</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame381">
                         <div class="frame71-frame272">
-                          <span class="frame71-text088"><span onblur="calcTax()" class="Editable-Text"
-                              contenteditable>01</span></span>
+                          <span class="frame71-text088"><span onblur="calcTax()" class="Editable-text" contenteditable>01</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame391">
                         <div class="frame71-frame291">
                           <span class="frame71-text090">
-                            <span onblur="calcTax()" class="Editable-Text" contenteditable>00</span>
+                            <span onblur="calcTax()" class="Editable-text" contenteditable>00</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame451">
                         <div class="frame71-frame292">
                           <span class="frame71-text092">
-                            <span class="Editable-Text" contenteditable>00</span>
+                            <span class="Editable-text" contenteditable>00</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame46">
                         <div class="frame71-frame2604">
                           <span class="frame71-text094">
-                            <span class="Editable-Text" contenteditable>9963</span>
+                            <span class="Editable-text" contenteditable>9963</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame411">
                         <div class="frame71-frame301">
-                          <span class="frame71-text096"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text096"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame421">
                         <div class="frame71-frame311">
-                          <span class="frame71-text098"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text098"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame431">
@@ -423,53 +425,53 @@
                         <div class="frame71-frame2605">
                           <div class="frame71-frame442">
                             <span class="frame71-text101">
-                              <span class="Editable-Text" contenteditable>--</span>
+                              <span class="Editable-text" contenteditable>--</span>
                             </span>
                             <span class="frame71-text103">
-                              <span class="Editable-Text" contenteditable>--</span>
+                              <span class="Editable-text" contenteditable>--</span>
                             </span>
                           </div>
                         </div>
                       </div>
                       <div class="frame71-frame372">
                         <div class="frame71-frame2606">
-                          <span class="frame71-text105"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text105"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame382">
                         <div class="frame71-frame273">
-                          <span class="frame71-text106"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text106"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame392">
                         <div class="frame71-frame293">
                           <span class="frame71-text108">
-                            <span class="Editable-Text" contenteditable>--</span>
+                            <span class="Editable-text" contenteditable>--</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame452">
                         <div class="frame71-frame294">
                           <span class="frame71-text110">
-                            <span class="Editable-Text" contenteditable>--</span>
+                            <span class="Editable-text" contenteditable>--</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame461">
                         <div class="frame71-frame2607">
                           <span class="frame71-text112">
-                            <span class="Editable-Text" contenteditable>--</span>
+                            <span class="Editable-text" contenteditable>--</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame412">
                         <div class="frame71-frame302">
-                          <span class="frame71-text114"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text114"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame422">
                         <div class="frame71-frame312">
-                          <span class="frame71-text116"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text116"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame432">
@@ -483,53 +485,53 @@
                         <div class="frame71-frame2609">
                           <div class="frame71-frame443">
                             <span class="frame71-text119">
-                              <span class="Editable-Text" contenteditable>--</span>
+                              <span class="Editable-text" contenteditable>--</span>
                             </span>
                             <span class="frame71-text121">
-                              <span class="Editable-Text" contenteditable>--</span>
+                              <span class="Editable-text" contenteditable>--</span>
                             </span>
                           </div>
                         </div>
                       </div>
                       <div class="frame71-frame373">
                         <div class="frame71-frame2610">
-                          <span class="frame71-text123"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text123"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame383">
                         <div class="frame71-frame274">
-                          <span class="frame71-text124"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text124"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame393">
                         <div class="frame71-frame295">
                           <span class="frame71-text126">
-                            <span class="Editable-Text" contenteditable>--</span>
+                            <span class="Editable-text" contenteditable>--</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame453">
                         <div class="frame71-frame296">
                           <span class="frame71-text128">
-                            <span class="Editable-Text" contenteditable>--</span>
+                            <span class="Editable-text" contenteditable>--</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame462">
                         <div class="frame71-frame2611">
                           <span class="frame71-text130">
-                            <span class="Editable-Text" contenteditable>--</span>
+                            <span class="Editable-text" contenteditable>--</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame413">
                         <div class="frame71-frame303">
-                          <span class="frame71-text132"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text132"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame423">
                         <div class="frame71-frame313">
-                          <span class="frame71-text134"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text134"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame433">
@@ -543,53 +545,53 @@
                         <div class="frame71-frame2612">
                           <div class="frame71-frame444">
                             <span class="frame71-text137">
-                              <span class="Editable-Text" contenteditable>--</span>
+                              <span class="Editable-text" contenteditable>--</span>
                             </span>
                             <span class="frame71-text139">
-                              <span class="Editable-Text" contenteditable>--</span>
+                              <span class="Editable-text" contenteditable>--</span>
                             </span>
                           </div>
                         </div>
                       </div>
                       <div class="frame71-frame374">
                         <div class="frame71-frame2613">
-                          <span class="frame71-text141"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text141"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame384">
                         <div class="frame71-frame276">
-                          <span class="frame71-text142"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text142"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame394">
                         <div class="frame71-frame297">
                           <span class="frame71-text144">
-                            <span class="Editable-Text" contenteditable>--</span>
+                            <span class="Editable-text" contenteditable>--</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame454">
                         <div class="frame71-frame298">
                           <span class="frame71-text146">
-                            <span class="Editable-Text" contenteditable>--</span>
+                            <span class="Editable-text" contenteditable>--</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame463">
                         <div class="frame71-frame2614">
                           <span class="frame71-text148">
-                            <span class="Editable-Text" contenteditable>--</span>
+                            <span class="Editable-text" contenteditable>--</span>
                           </span>
                         </div>
                       </div>
                       <div class="frame71-frame414">
                         <div class="frame71-frame304">
-                          <span class="frame71-text150"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text150"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame424">
                         <div class="frame71-frame314">
-                          <span class="frame71-text152"><span class="Editable-Text" contenteditable>--</span></span>
+                          <span class="frame71-text152"><span class="Editable-text" contenteditable>--</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame434">
@@ -603,10 +605,10 @@
                     <div class="frame71-frame551">
                       <div class="frame71-frame66">
                         <span class="frame71-text155">
-                          <span class="Editable-Text" contenteditable>Declaration</span>
+                          <span class="Editable-text" contenteditable>Declaration</span>
                         </span>
                         <span class="frame71-text157">
-                          <span class="Editable-Text" contenteditable>
+                          <span class="Editable-text" contenteditable>
                             We declare that this invoice shows the actual
                             price of the goods and/or services described and
                             that all particulars are true and correct.
@@ -618,50 +620,50 @@
                       <div class="frame71-frame33">
                         <div class="frame71-frame242">
                           <span class="frame71-text159">
-                            <span class="Editable-Text" contenteditable>Total Taxable
+                            <span class="Editable-text" contenteditable>Total Taxable
                               amount:</span>
                           </span>
                           <div class="frame71-frame53">
                             <span class="frame71-text161">₹</span>
                             <span class="frame71-text162">
-                              <span class="Editable-Text" contenteditable="true" >000</span>
+                              <span class="Editable-text" contenteditable="true">000</span>
                             </span>
                           </div>
                         </div>
                         <div class="frame71-frame243">
                           <span class="frame71-text164">
-                            <span class="Editable-Text" contenteditable>Total tax:</span>
+                            <span class="Editable-text" contenteditable>Total tax:</span>
                           </span>
                           <div class="frame71-frame531">
                             <span class="frame71-text166">₹</span>
                             <span class="frame71-text167">
-                              <span class="Editable-Text" contenteditable>000</span>
+                              <span class="Editable-text" contenteditable>000</span>
                             </span>
                           </div>
                         </div>
                         <div class="frame71-frame244">
                           <span class="frame71-text169">
-                            <span class="Editable-Text" contenteditable>
+                            <span class="Editable-text" contenteditable>
                               Net amount payable (Inclusive of tax):
                             </span>
                           </span>
                           <div class="frame71-frame532">
                             <span class="frame71-text171">₹</span>
                             <span class="frame71-text172">
-                              <span class="Editable-Text" contenteditable>00000</span>
+                              <span class="Editable-text" contenteditable>00000</span>
                             </span>
                           </div>
                         </div>
                         <div class="frame71-frame245">
                           <span class="frame71-text174">
-                            <span class="Editable-Text" contenteditable>(E&amp;OE)</span>
+                            <span class="Editable-text" contenteditable>(E&amp;OE)</span>
                           </span>
                           <span class="frame71-text176">
-                            <span class="Editable-Text" contenteditable>Net Amount
+                            <span class="Editable-text" contenteditable>Net Amount
                               Chargeable (in words):</span>
                           </span>
                           <span class="frame71-text178">
-                            <span class="Editable-Text" contenteditable>
+                            <span class="Editable-text" contenteditable>
                               Indian Rupee, Eleven thousand rupee only.
                             </span>
                           </span>
@@ -673,12 +675,12 @@
                     <div class="frame71-frame552">
                       <div class="frame71-frame67">
                         <span class="frame71-text180">
-                          <span class="Editable-Text" contenteditable>For M/S Baba Home
+                          <span class="Editable-text" contenteditable>For M/S Baba Home
                             Stay,</span>
                         </span>
                         <div class="frame71-frame69"></div>
                         <span class="frame71-text182">
-                          <span class="Editable-Text" contenteditable>Authorised
+                          <span class="Editable-text" contenteditable>Authorised
                             Signatory</span>
                         </span>
                       </div>
@@ -689,16 +691,18 @@
             </div>
           </div>
           <span class="frame71-text184">
-            <span class="Editable-Text" contenteditable>This is a computer generated invoice</span>
+            <span class="Editable-text" contenteditable>This is a computer generated invoice</span>
           </span>
         </div>
       </div>
     </div>
   </div>
-  <script src="./taxmath.js"></script>
-  <script src="./custnamereplicate.js"></script>
-  <script src="./printmodeTitle.js"></script>
-  <script src="./randomjava.js"></script>
+
+
+  <script src="./Scripts/randomjava.js"></script>
+  <script src="./Scripts/custnamereplicate.js"></script>
+  <script src="./Scripts/printmodeTitle.js"></script>
+  <script src="./Scripts/taxmath.js"></script>
 </body>
 
 </html>
