@@ -97,22 +97,64 @@
 
   <link rel="stylesheet" href="./Styles/InvoicePrint.css">
   <link rel="stylesheet" type="text/css" media="print" href="./Styles/print.css" />
+  <link rel="stylesheet" href="./Styles/clock.css">
 </head>
 
 <body onbeforeprint="rmTitle()">
 
-
-
-  <div id="topbar"> 
+  <div id="topbar">
     <button onclick="printIt()" id="topbutton" class="button1">
       <span id="gobutton" class="text">Go print !</span>
     </button>
 
     <br>
+   
+    <button onclick=" window.scrollTo(0, -2000);" id="topbutton0" class="button1">
+      <a class="text" >Top</a> 
+    </button>
+
+    <br>
+  
+    <button id="topbutton1" class="button1">
+    <a class="text" href="#invoice">Scroll to invoice</a> 
+    </button>
+
+        <br>
     <button onclick="calcTax()" id="topbutton2" class="button1">
-      <span id="gobutton" class="text">update!</span>
+      <span class="text">update!</span>
+    </button>
   </div>
-  </button>
+  
+
+  <div id="clock">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <div class="digital-clock">
+      <i class="makebroken dot-menu-btn" id="active-menu"></i>
+      <!-- <i class="uil uil-ellipsis-v dot-menu-btn " id="active-menu"></i> -->
+      <ul class="dot-menu" id="active-menu">
+        <li class="menu-item" id="active-menu">
+          <span class="clock-format-text" id="active-menu">Formato 24hr</span>
+          <div class="format-switch-btn" id="active-menu" data-format="12"></div>
+        </li>
+      </ul>
+      <div class="time">
+        <span class="hours">00</span>
+        <span class="dots">:</span>
+        <span class="minutes">00</span>
+        <div class="right-side">
+          <span class="period">AM/PM</span>
+          <span class="seconds">00</span>
+        </div>
+      </div>
+      <div class="calendar">
+        <span class="month-name">Mês</span>,
+        <span class="day-name">Dia</span>
+        <span class="day-number">00</span>
+        <span class="year">0000</span>
+      </div>
+    </div>
+  </div>
 
   <div id="invoice" class=" printable">
 
@@ -699,10 +741,13 @@
   </div>
 
 
+
   <script src="./Scripts/randomjava.js"></script>
   <script src="./Scripts/custnamereplicate.js"></script>
   <script src="./Scripts/printmodeTitle.js"></script>
   <script src="./Scripts/taxmath.js"></script>
+
+  <script src="./Scripts/clock.js"></script>
 </body>
 
 </html>

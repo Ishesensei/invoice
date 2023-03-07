@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#clock {
+  margin-top: 100px;
+}
+
 #topbar {
   position: fixed;
   top: 0;
@@ -19,7 +29,7 @@
 
 /* scrollbar */
 ::-webkit-scrollbar {
-  width: 40px;
+  width: 10px;
 }
 
 /* scrollbar track */
@@ -107,7 +117,10 @@ button.button1:hover {
   outline: 0;
 }
 
-button.button1 span {
+
+
+
+button.button1 span,button.button1 a  {
   background-color: rgb(3, 3, 3);
   padding: 16px 24px;
   border-radius: 6px;
@@ -116,7 +129,9 @@ button.button1 span {
   transition: 300ms;
 
 }
-
+span,button.button1:hover a  {
+  background: none;
+}
 button.button1:hover span {
   background: none;
 }
