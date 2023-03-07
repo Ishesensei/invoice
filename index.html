@@ -104,7 +104,7 @@
 
 
   <div id="invoice" class="printable">
-    
+
 
     <div class="frame71-container">
       <div class="frame71-frame71">
@@ -194,7 +194,8 @@
                               (Shipped to):</span>
                           </span>
                           <span class="frame71-text028">
-                            <span onblur="custnamesync()" class="custName  custname Editable-Text" contenteditable>Name</span>
+                            <span onblur="custnamesync()" class="custName  custname Editable-Text"
+                              contenteditable>Name</span>
                           </span>
                           <span class="frame71-text030">
                             <span onblur="custaddsync()" class="custadd Editable-Text" contenteditable>Address</span>
@@ -202,8 +203,7 @@
                           <div class="frame71-frame111">
                             <div class="frame71-frame12">
                               <span class="frame71-text032">
-                                <span  class=" Editable-Text"
-                                  contenteditable>GSTIN/UIN:</span>
+                                <span class=" Editable-Text" contenteditable>GSTIN/UIN:</span>
                               </span>
                               <span class="frame71-text034">
                                 <span class="Editable-Text" contenteditable>(if
@@ -211,7 +211,8 @@
                               </span>
                             </div>
                             <span class="frame71-text036">
-                              <span onblur="gstinNosync()"class="gstinNo Editable-Text" contenteditable>16 Digit gstin</span>
+                              <span onblur="gstinNosync()" class="gstinNo Editable-Text" contenteditable>16 Digit
+                                gstin</span>
                             </span>
                           </div>
                         </div>
@@ -371,13 +372,14 @@
                       </div>
                       <div class="frame71-frame381">
                         <div class="frame71-frame272">
-                          <span class="frame71-text088"><span class="Editable-Text" contenteditable>01</span></span>
+                          <span class="frame71-text088"><span onblur="calcTax()" class="Editable-Text"
+                              contenteditable>01</span></span>
                         </div>
                       </div>
                       <div class="frame71-frame391">
                         <div class="frame71-frame291">
                           <span class="frame71-text090">
-                            <span class="Editable-Text" contenteditable>00</span>
+                            <span onblur="calcTax()" class="Editable-Text" contenteditable>00</span>
                           </span>
                         </div>
                       </div>
@@ -641,7 +643,7 @@
                           <div class="frame71-frame532">
                             <span class="frame71-text171">₹</span>
                             <span class="frame71-text172">
-                              <span class="Editable-Text" contenteditable>11000</span>
+                              <span class="Editable-Text" contenteditable>00000</span>
                             </span>
                           </div>
                         </div>
@@ -688,6 +690,7 @@
       </div>
     </div>
   </div>
+  <script src="./taxmath.js"></script>
   <script src="./custnamereplicate.js"></script>
   <script src="./printmodeTitle.js"></script>
   <script src="./randomjava.js"></script>
