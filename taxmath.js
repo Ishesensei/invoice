@@ -1,4 +1,6 @@
 console.log("tax math executed");
+var i1 = ".innerHTML";
+var q1 = "document.querySelector";
 
 var nights = document.querySelector(".frame71-frame272 .Editable-Text");
 var perNight = document.querySelector(".frame71-frame291 .Editable-Text");
@@ -11,10 +13,22 @@ var taxable = document.querySelector(".frame71-frame292 .Editable-Text");
 var cgst = document.querySelector(".frame71-frame301 .Editable-Text");
 var sgst = document.querySelector(".frame71-frame311 .Editable-Text");
 
-var totalTaxableAmount = document.querySelector(
-  ".frame71-frame53 .Editable-Text"
-);
-var totalTax = document.querySelector(".frame71-frame531 .Editable-Text");
+
+var totalTaxableAmt = (
+  Number((document.querySelector(".frame71-frame292 .Editable-Text").innerHTML.match(/[0-9]/g)||"").toString().replace(/[^0-9]/g,""))+
+  Number((document.querySelector(".frame71-frame294 .Editable-Text").innerHTML.match(/[0-9]/g)||"").toString().replace(/[^0-9]/g,""))+
+  Number((document.querySelector(".frame71-frame296 .Editable-Text").innerHTML.match(/[0-9]/g)||"").toString().replace(/[^0-9]/g,""))+
+  Number((document.querySelector(".frame71-frame298 .Editable-Text").innerHTML.match(/[0-9]/g)||"").toString().replace(/[^0-9]/g,""))
+  );
+
+var totalTax = (
+  Number((document.querySelector(".frame71-frame292 .Editable-Text").innerHTML.match(/[0-9]/g)||"").toString().replace(/[^0-9]/g,""))+
+  Number((document.querySelector(".frame71-frame294 .Editable-Text").innerHTML.match(/[0-9]/g)||"").toString().replace(/[^0-9]/g,""))+
+  Number((document.querySelector(".frame71-frame296 .Editable-Text").innerHTML.match(/[0-9]/g)||"").toString().replace(/[^0-9]/g,""))+
+  Number((document.querySelector(".frame71-frame298 .Editable-Text").innerHTML.match(/[0-9]/g)||"").toString().replace(/[^0-9]/g,""))
+
+
+)
 var netPayable = document.querySelector(".frame71-frame532 .Editable-Text");
 
 function calcTax() {
@@ -39,3 +53,5 @@ function calcTax() {
   cgst.innerHTML = cgstcalculator(taxableamt);;
   sgst.innerHTML = cgstcalculator(taxableamt);;
 }
+
+
