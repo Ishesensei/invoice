@@ -8,11 +8,7 @@
 
 
 /* button.button1 */
-body {
-  /* background-color: #262626; */
-  display: block;
-  justify-content: center;
-}
+
 
 iframe {
   box-sizing: content-box;

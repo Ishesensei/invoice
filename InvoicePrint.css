@@ -2,16 +2,27 @@
 
 
 /* changes */
-body {
+#invoice {
+  margin
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
   justify-content: center;
   text-align: center;
+  width: fit-content;
   display: flex;
   min-width: fit-content;
+  border-radius: 2rem;
+  box-shadow: 0 0 3rem 0 #b657ff3e ;
+  transition: all .3s;
 
 }
+
+#invoice:hover{
+scale: 1.01;
+}
+
+
 /* button.button1 */
 .button1 {
   height: fit-content;
