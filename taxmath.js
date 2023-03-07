@@ -50,8 +50,8 @@ function calcTax() {
       var cgstcalc = Math.round((taxableamt * 18) / 100 / 2);
     }
     // replace taxable amts
-    document.querySelector(".frame71-frame53 .Editable-Text").innerHTML =
-      totalTaxableAmt;
+    document.querySelector("frame71-text1s62 .Editable-Text").innerHTML =
+	12121212;
     // document.querySelector(".frame71-frame53 .Editable-Text").innerHTML =
     //   totalTaxAmtsssss;
 

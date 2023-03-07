@@ -92,7 +92,7 @@ iframe {}
 
 
 
-.Editable-Text:hover {
+.Editable-textA:hover {
   box-shadow: 0 0 .5rem 0 rgba(255, 10, 255, 0.421);
   background-color: aquamarine;
   animation-duration: 300ms;
@@ -146,7 +146,7 @@ iframe {}
   flex-direction: column;
 }
 
-.frame71-text {
+.frame71-textA {
   height: auto;
   font-size: 20px;
   align-self: auto;
